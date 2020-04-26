@@ -1,4 +1,4 @@
-let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level'];
+let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level','Other symptoms','Other symptoms'];
 let headerNameList = [
   'Fever',
   'Cough',
@@ -8,13 +8,11 @@ let headerNameList = [
   'Sore throat',
   'Chills',
   'Headache',
-  'Muscle pain',
+  'Muscle/joint pain',
   'Fatigue',
   'Cravings',
-  'Anything unusual',
-  'Blue colored lips',
-  'Other symptoms',
-  'Other symptoms', 
+  'Blue lips',
+  'Anything unusual', 
 ]
 
 $(document).ready(() => {
@@ -32,7 +30,7 @@ $(document).ready(() => {
     $("<tbody></tbody>").appendTo("table");
 
     // create body temperature rows
-    for (let n in temp) {
+   /* for (let n in temp) {
       let row = $("<tr></tr>");
       $("<th></th>").text(temp[n]).appendTo(row);
       for (let i = 0; i < 14; i++) {
@@ -41,7 +39,7 @@ $(document).ready(() => {
       $("tbody").append(row);
       // adds row for pulse
       $("tbody").append(row);
-    };
+    };*/
     
     // create checkbox rows
     for (let n in headerNameList) {
@@ -51,7 +49,20 @@ $(document).ready(() => {
         let cell = $("<td></td>").addClass('cell').appendTo(row);
       };
     };
-  }
+
+    for (let n in temp) {
+        let row = $("<tr></tr>");
+        $("<th></th>").text(temp[n]).appendTo(row);
+        for (let i = 0; i < 14; i++) {
+          let cell = $("<td></td>").appendTo(row).append('<input/>').attr('type','text');
+        };
+        $("tbody").append(row);
+        // adds row for pulse
+        $("tbody").append(row);
+      };
+  };
+
+  
 
   // use function to create table
   createTableBody();
