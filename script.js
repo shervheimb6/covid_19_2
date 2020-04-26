@@ -14,9 +14,9 @@ let headerNameList = [
   'Blood pressure',
   'Blood oxygen level',
   'Anything unusual',
-  '',
-  '',
-  '', 
+  'Blue colored lips',
+  'Other symptoms',
+  'Other symptoms', 
 ]
 
 $(document).ready(() => {
