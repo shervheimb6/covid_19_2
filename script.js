@@ -12,7 +12,7 @@ let headerNameList = [
   'Fatigue',
   'Cravings',
   'Blue lips',
-  'Anything unusual', 
+  'Unusual symptoms', 
 ]
 
 $(document).ready(() => {
@@ -58,7 +58,7 @@ $(document).ready(() => {
         };
         $("tbody").append(row);
         // adds row for pulse
-        $("tbody").append(row);
+       // $("tbody").append(row);
       };
   };
 
