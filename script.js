@@ -1,4 +1,4 @@
-let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse'];
+let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level'];
 let headerNameList = [
   'Fever',
   'Cough',
@@ -11,8 +11,6 @@ let headerNameList = [
   'Muscle pain',
   'Fatigue',
   'Cravings',
-  'Blood pressure',
-  'Blood oxygen level',
   'Anything unusual',
   'Blue colored lips',
   'Other symptoms',
