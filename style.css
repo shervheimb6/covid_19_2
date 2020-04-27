@@ -84,6 +84,11 @@ table {
     font-size: 34px;
   }
 
+  #like_button_container {
+    color: royalblue;
+    border-radius: 10px;
+  }
+
 
   
 
