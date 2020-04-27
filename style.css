@@ -42,21 +42,32 @@ table {
 
   .date {
     font-size: 50px;
-    border-radius: 3px;
+    border-radius: 8px;
     background-color: peachpuff;
+    border: 3px solid black;
   }
 
   h4  {
     background-color: peachpuff;
+    text-align: center;
   }
 
   img    {
+    
     width: 115px;
     height: 75px;
     border-radius: 10px;
   }
 
-  #grid  {
-    display: flex
+  #grid {
+    display: flex;
     justify-content: space-between;
   }
+
+  h1  {
+    text-align: center;
+    border-radius: 8px;
+    background-color: peachpuff;
+    border: 3px solid black;
+  }
+  
