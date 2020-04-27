@@ -60,6 +60,10 @@ $(document).ready(() => {
         // adds row for pulse
        // $("tbody").append(row);
       };
+
+     
+
+     
   };
 
   
