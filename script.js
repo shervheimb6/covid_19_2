@@ -1,4 +1,4 @@
-let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level','Other symptoms', 'Daily travels'];
+let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level','Unusual symptoms', 'Daily travels'];
 let headerNameList = [
   'Fever',
   'Cough',
@@ -11,8 +11,7 @@ let headerNameList = [
   'Muscle/joint pain',
   'Fatigue',
   'Cravings',
-  'Blue lips',
-  'Unusual symptoms', 
+  'Blue lips', 
 ]
 
 $(document).ready(() => {
