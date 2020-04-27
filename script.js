@@ -46,10 +46,18 @@ $(document).ready(() => {
         $("tbody").append(row);
        
       };
+
+      
+    };
+
+    function statement()    {
+      $("<h4>This page is not supported by any governmental agency<h4>").appendTo("body");
+
   };
 
   // use function to create table
   createTableBody();
+  statement();
 
   // checkbox on/off
   $('td').on('click', event => {
