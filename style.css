@@ -37,8 +37,26 @@ table {
  .dates {
     width: 80px;
     height:20px;
+    background-color: powderblue;
   }
 
   .date {
     font-size: 50px;
+    border-radius: 3px;
+    background-color: peachpuff;
+  }
+
+  h4  {
+    background-color: peachpuff;
+  }
+
+  img    {
+    width: 115px;
+    height: 75px;
+    border-radius: 10px;
+  }
+
+  #grid  {
+    display: flex
+    justify-content: space-between;
   }
