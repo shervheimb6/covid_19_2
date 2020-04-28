@@ -51,7 +51,7 @@ $(document).ready(() => {
     };
 
     function statement()    {
-      $("<h4>This page is not supported by any governmental agency<h4>").appendTo("body");
+      $("<h4>Disclaimer- In the upper corner is the Centers for Disease Control and Prevention CDC link. This link is to the CDC.gov website. Independently, the above chart allows you to personally record your symptoms. Just click and unclick into the upper boxes, and enter data into the bottom text boxes. As always, if you feel you need proper medical attention contact a medical doctor.<h4>").appendTo("body");
 
   };
 
