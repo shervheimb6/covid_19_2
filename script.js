@@ -22,7 +22,7 @@ $(document).ready(() => {
     // create header row
     let tableHead = $("<thead></thead>").addClass('head').append("<tr></tr>");
     tableHead.children().append("<th>Symptoms</th>");
-    for (let i = 1; i < 15; i++) tableHead.children().append(`<th>Day ${i}</th>`);
+    for (let i = 1; i < 15; i++) tableHead.children().append(`<th>Day ${i}<input type= "text"></th>`);
     tableHead.appendTo("table");
 
     // create table body
