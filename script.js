@@ -51,9 +51,10 @@ $(document).ready(() => {
     };
 
     function statement()    {
-      $("<h4>Disclaimer- In the upper corner is the Centers for Disease Control and Prevention CDC link. This link is to the CDC.gov website. Independently, the above chart allows you to personally record your symptoms. Just click and unclick into the upper boxes, and enter data into the bottom text boxes. As always, if you feel you need proper medical attention contact a medical doctor.<h4>").appendTo("body");
+      $("<h4>Disclaimer- In the upper corner is the Centers for Disease Control and Prevention CDC link. The CDC link is to the CDC.gov website. Independently, the above chart allows you to personally record your symptoms. Just click and unclick into the upper boxes, and enter data into the bottom text boxes. As always, if you feel you need proper medical attention contact a medical doctor.<h4>").appendTo("body");
 
   };
+
 
   // use function to create table
   createTableBody();
@@ -67,28 +68,5 @@ $(document).ready(() => {
   });
 });
 
-/////////   Like button componant
-const e = React.createElement;
 
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-
-const domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(LikeButton), domContainer);
 
