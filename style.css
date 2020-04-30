@@ -99,13 +99,13 @@ table {
   }
 
   #namebar  {
-    display: inline-block
+    display: inline-block;
   }
 
   p   {
     font-size: 22px;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif :
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   }
  
   
