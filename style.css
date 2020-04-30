@@ -90,7 +90,9 @@ table {
   }
 
 
-  
+  input .names {
+    width: 60px;
+  }
 
  
   
