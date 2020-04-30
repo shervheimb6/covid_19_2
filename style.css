@@ -36,7 +36,7 @@ table {
 
  .dates {
     width: 80px;
-    height:20px;
+    height:22px;
     background-color: powderblue;
   }
 
@@ -91,7 +91,8 @@ table {
 
 
   .names {
-    width: 75px;
+    width: 85px;
+    height: 15px;
   }
 
   body  {
