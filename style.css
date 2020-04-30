@@ -90,9 +90,22 @@ table {
   }
 
 
-  input .names {
-    width: 60px;
+  .names {
+    width: 75px;
   }
 
+  body  {
+    background-color:royalblue;
+  }
+
+  #namebar  {
+    display: inline-block
+  }
+
+  p   {
+    font-size: 22px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif :
+  }
  
   
