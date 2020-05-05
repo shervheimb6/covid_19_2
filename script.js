@@ -15,26 +15,13 @@ let headerNameList = [
 ];
 
 let temps = ['temp','temp'];
-
-
-
-
+  
 $(document).ready(() => {
-
-
- /* function createNamebar() {
-    $("<h2>Name</h2>" ).appendTo("body");
-  }*/
-
-
+  
   function createTableBody() {
     // create table
     $("<table></table>").appendTo("body");
-
-
-
-
-    
+  
     // create header row
     let tableHead = $("<thead></thead>").addClass('head').append("<tr></tr>");
     tableHead.children().append("<th>Symptoms</th>");
@@ -66,13 +53,15 @@ $(document).ready(() => {
 
     function statement()    {
       $("<h4>Disclaimer- In the upper corner is the Centers for Disease Control and Prevention CDC link. The CDC link is to the CDC.gov website. Independently, the above chart allows you to personally record your symptoms. Just click and unclick into the upper boxes, and enter data into the bottom text boxes. As always, if you feel you need proper medical attention contact a medical doctor.<h4>").appendTo("body");
-
   };
 
-
-  // use function to create table
+  
+  // use function to create table ad disclaimer
+  
   createTableBody();
   statement();
+  
+  
 
   // checkbox on/off
   $('td').on('click', event => {

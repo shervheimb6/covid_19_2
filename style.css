@@ -53,26 +53,6 @@ table {
     text-align: center;
   }
 
-  img    {
-    
-    width: 115px;
-    height: 75px;
-    border-radius: 10px;
-    transition: transform .35s;
-    
-  }
-
-  img:hover{
-    -ms-transform: scale(1.5); /* IE 9 */
-   -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.85); 
-  }
-
-  #grid {
-    display: flex;
-    justify-content: space-between;
-  }
-
   h1  {
     text-align: center;
     border-radius: 8px;
@@ -82,11 +62,6 @@ table {
 
   .log {
     font-size: 40px;
-  }
-
-  #like_button_container {
-    color: royalblue;
-    border-radius: 10px;
   }
 
 
