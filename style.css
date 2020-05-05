@@ -87,5 +87,11 @@ table {
     display: flex;
     justify-content: space-between;
   }
+
+  img   {
+    width:60px;
+    height:60px;
+    border-radius: 10px;
+  }
  
   
