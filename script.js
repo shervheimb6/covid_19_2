@@ -20,6 +20,13 @@ let temps = ['temp','temp'];
 
 
 $(document).ready(() => {
+
+
+ /* function createNamebar() {
+    $("<h2>Name</h2>" ).appendTo("body");
+  }*/
+
+
   function createTableBody() {
     // create table
     $("<table></table>").appendTo("body");
@@ -37,14 +44,6 @@ $(document).ready(() => {
     // create table body
     $("<tbody></tbody>").appendTo("table");
     
-    /*for (let n in temps) {
-      let row = $("<tr></tr>");
-      $("<th></th>").text(temps[n]).appendTo(row);
-      for (let i=0; i < 14; i++) {
-        let cell =$("<td></td>").appendTo(row).append('<input />').attr('type','text');
-      };
-      ("tbody").append(row);
-    };*/
 
     // create checkbox rows
     for (let n in headerNameList) {

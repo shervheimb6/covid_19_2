@@ -95,17 +95,16 @@ table {
     height: 15px;
   }
 
-  body  {
-    background-color:royalblue;
-  }
+  
 
   #namebar  {
     display: inline-block;
+    text-align: right;
   }
 
   p   {
     font-size: 22px;
-    color: white;
+    color: blue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   }
  
