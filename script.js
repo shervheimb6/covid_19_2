@@ -1,3 +1,15 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyC-GxgzimExBndV2Pal28aQaNZXc2WW72Q",
+  authDomain: "covid19journal-d14af.firebaseapp.com",
+  databaseURL: "https://covid19journal-d14af.firebaseio.com",
+  projectId: "covid19journal-d14af",
+  storageBucket: "covid19journal-d14af.appspot.com",
+  messagingSenderId: "242721360407",
+  appId: "1:242721360407:web:6db1871f966f5ae1236a52"
+};
+
+
+
 let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level','Unusual symptoms', 'Daily travels'];
 let headerNameList = [
   'Fever',
@@ -15,6 +27,14 @@ let headerNameList = [
 ];
 
 let temps = ['temp','temp'];
+
+let savedData = {
+  inputTemps :     createTableBody.tableHead.input ,
+  checkedBoxes :   createTableBody.cell.cell  ,
+  
+
+}
+
   
 $(document).ready(() => {
   
@@ -52,13 +72,15 @@ $(document).ready(() => {
     };
 
     function statement()    {
-      $("<h4>Disclaimer- In the upper corner is the Centers for Disease Control and Prevention CDC link. The CDC link is to the CDC.gov website. Independently, the above chart allows you to personally record your symptoms. Just click and unclick into the upper boxes, and enter data into the bottom text boxes. As always, if you feel you need proper medical attention contact a medical doctor.<h4>").appendTo("body");
+      $("<h4>Disclaimer- The CDC link in the upper left corner takes you to the Center for Disease Control government website. By clicking and unclicking in the above chart, you can record your own symptoms. Enter information into the bottom text boxes. If you feel you need medical attention contact a medical doctor or in an emergwncy call 911. <h4>").appendTo("body");
   };
 
   
-  // use function to create table ad disclaimer
+  
+  
   
   createTableBody();
+  // use function to create table ad disclaimer
   statement();
   
   
@@ -69,7 +91,12 @@ $(document).ready(() => {
       $(event.currentTarget).html($(event.currentTarget).html() === 'X'? '': 'X').toggleClass('x');
     };
   });
-});
 
+/*let buttonSave('click', event =>  {
+    event.currentTarget("body").value;
+});*/
+
+
+});
 
 
