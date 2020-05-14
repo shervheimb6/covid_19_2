@@ -25,7 +25,7 @@ let headerNameList = [
   'Cravings',
   'Blue lips', 
 ];
-
+/*
 let temps = ['temp','temp'];
 
 let savedData = {
@@ -34,7 +34,7 @@ let savedData = {
   
 
 }
-
+*/
   
 $(document).ready(() => {
   
@@ -72,7 +72,7 @@ $(document).ready(() => {
     };
 
     function statement()    {
-      $("<h4>Disclaimer- The CDC link in the upper left corner takes you to the Center for Disease Control government website. By clicking and unclicking in the above chart, you can record your own symptoms. Enter information into the bottom text boxes. If you feel you need medical attention contact a medical doctor or in an emergwncy call 911. <h4>").appendTo("body");
+      $("<h4>Disclaimer- The CDC link in the upper left corner takes you to the Center for Disease Control government website. By clicking and unclicking in the above chart you can record your own symptoms. Enter information into the bottom text boxes. If you feel you need medical attention contact a medical doctor or in an emergency call 911. <h4>").appendTo("body");
   };
 
   
