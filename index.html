@@ -5,10 +5,13 @@
         <title>Covid19 Journal</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
         
       </head>
       <body>
         <div id="grid">
+          <button id="loginButton">Login</button>
           <h3 id="namebar">
             <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/index.html#cdc-chat-bot-open">CDC</a>
           </h3>
@@ -25,21 +28,16 @@
                  
                 <h4>To use this chart enter the date below the day then click the boxes on or off next to your symptom</h4>
                 <h4>Enter optional information into text boxes at the bottom</h4>
+
+
+
+                <button id="saveButton">Save</button>
+                <button id="loadButton">Load</button>
               
   
         
-             <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-             <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-             <script src="script.js"></script>  
              
-             <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/7.14.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+             <script src="script.js"></script>  
 
     </body>
       </html>

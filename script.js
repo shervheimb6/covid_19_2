@@ -8,14 +8,18 @@ const firebaseConfig = {
   appId: "1:242721360407:web:6db1871f966f5ae1236a52"
 };
 
+//buttons
+const saveButton = document.querySelector("#saveButton");
+const loadButton = document.querySelector("#loadButton");
 
+// write a function that targets the 
 
 let temp = ['Body Temp a.m.', 'Body Temp p.m.','Pulse','Blood pressure','Blood oxygen level','Unusual symptoms', 'Daily travels'];
 let headerNameList = [
   'Fever',
   'Cough',
   'Running nose',
-  'Loss of Smell',
+  'Loss of Smell/Taste',
   'Shortness of breath',
   'Sore throat',
   'Chills',
@@ -25,22 +29,20 @@ let headerNameList = [
   'Cravings',
   'Blue lips', 
 ];
-/*
-let temps = ['temp','temp'];
 
-let savedData = {
-  inputTemps :     createTableBody.tableHead.input ,
-  checkedBoxes :   createTableBody.cell.cell  ,
-  
+//login
 
-}
-*/
-  
+function loginButton()  {
+
+};
+
+
+
 $(document).ready(() => {
   
   function createTableBody() {
     // create table
-    $("<table></table>").appendTo("body");
+   let table = $("<table></table>").appendTo("body");
   
     // create header row
     let tableHead = $("<thead></thead>").addClass('head').append("<tr></tr>");
@@ -60,7 +62,7 @@ $(document).ready(() => {
         let cell = $("<td></td>").addClass('cell').appendTo(row);
       };
     };
-
+    // creates the temp rows
     for (let n in temp) {
         let row = $("<tr></tr>");
         $("<th></th>").text(temp[n]).appendTo(row);
@@ -69,6 +71,33 @@ $(document).ready(() => {
         };
         $("tbody").append(row);    
       }; 
+      // click event listener for my save button
+saveButton.addEventListener("click", function() {
+  const textToSave = table ;
+  console.log("I am going to save" + textToSave + "to Firestore");
+  docRef.set({
+      textToSave
+
+  }).then(function() {
+      console.log("Status saved");
+  }).catch(function(error) {
+      console.log("got an error", error);
+  });
+});
+
+// this saves the data from our app and all the 
+// underlining information
+loadButton.addEventListener("click",  function() {
+  docRef.get().then(function (doc) {
+    if (doc && doc.exists) {
+        const myData = doc.data();
+        console.log(myData);
+      
+    }          
+  }).catch(function (error) {
+      console.log("Got an error", error);
+  });
+});
     };
 
     function statement()    {
@@ -76,27 +105,39 @@ $(document).ready(() => {
   };
 
   
-  
-  
-  
+  //this call creates the table body
   createTableBody();
   // use function to create table ad disclaimer
   statement();
   
   
-
   // checkbox on/off
   $('td').on('click', event => {
     if ($(event.currentTarget).hasClass('cell')) {
       $(event.currentTarget).html($(event.currentTarget).html() === 'X'? '': 'X').toggleClass('x');
     };
   });
-
-/*let buttonSave('click', event =>  {
-    event.currentTarget("body").value;
-});*/
-
-
+ 
 });
+
+// these firebase references are outside of the table function
+
+//ref to the 
+firebase.initializeApp(firebaseConfig);
+// ref to the firestore
+var firestore = firebase.firestore();
+
+// docRef refers to the firebase app name which is why the firestore 
+//doc is called samples/snadwichData
+const docRef = firestore.doc("samples/sandwichData");
+
+
+
+
+
+
+
+
+
 
 

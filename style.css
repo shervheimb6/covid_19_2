@@ -94,4 +94,30 @@ table {
     border-radius: 10px;
   }
  
+#saveButton  {
+  height: 45px;
+  width: 85px;
+  border-radius: 10px;
+  color:white;
+  font-weight: bold;
+  background-color: seagreen;
+}
+
+#loadButton  {
+  height: 45px;
+  width: 85px;
+  border-radius: 10px;
+  color:white;
+  font-weight: bold;
+  background-color: seagreen;
+}
+
+#loginButton  {
+  height: 65px;
+  width: 85px;
+  border-radius: 10px;
+  color:white;
+  font-weight: bold;
+  background-color: seagreen;
+}
   
